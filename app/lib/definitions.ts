@@ -1,3 +1,4 @@
+// Type definitions
 export type User = {
 	id: string;
 	name: string;
@@ -17,7 +18,7 @@ export type Invoice = {
 	customer_id: string;
 	amount: number;
 	date: string;
-	status: "pending" | "paid";
+	status: 'pending' | 'paid';
 };
 
 export type Revenue = {
@@ -33,7 +34,7 @@ export type LatestInvoice = {
 	amount: string;
 };
 
-export type LatestInvoiceRaw = Omit<LatestInvoice, "amount"> & {
+export type LatestInvoiceRaw = Omit<LatestInvoice, 'amount'> & {
 	amount: number;
 };
 
@@ -45,7 +46,7 @@ export type InvoicesTable = {
 	image_url: string;
 	date: string;
 	amount: number;
-	status: "pending" | "paid";
+	status: 'pending' | 'paid';
 };
 
 export type CustomersTableType = {
@@ -77,5 +78,5 @@ export type InvoiceForm = {
 	id: string;
 	customer_id: string;
 	amount: number;
-	status: "pending" | "paid";
+	status: 'pending' | 'paid';
 };
